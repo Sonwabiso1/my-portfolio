@@ -1,14 +1,18 @@
 import React from "react";
+import { FaLaptopCode } from "react-icons/fa";
 
 const Projects = () => {
     
     return (
         <div className="bg-royal-purple h-screen">
             {/* Projects Heading */}
-            <h1 className="font-heading text-[#FD5A46] text-5xl ml-24 mt-0 pt-20">Projects</h1>
+            <h1 className="font-heading text-[#FD5A46] text-5xl ml-24 mt-0 pt-20 flex items-center">
+                <span>Projects</span>
+                <FaLaptopCode className="ml-4" />
+            </h1>
             
             {/* Grid of Projects */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-10 my-10">
+            <div className="font-body grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-10 my-10">
                 {/* Project Card 1 */}
                 <div className="bg-coral-pink rounded-md overflow-hidden shadow-lg ">
                     <h1 className="text-white font-bold text-lg mb-2">Heading</h1>
