@@ -1,0 +1,9 @@
+/* In your CSS file */
+.scroll-hidden {
+    overflow-x: auto;
+    scrollbar-width: none; /* For Firefox */
+}
+
+.scroll-hidden::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+}
