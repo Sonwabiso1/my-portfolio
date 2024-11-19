@@ -1,7 +1,8 @@
 import React from 'react';
-import homeimage from '../assets/Sonwabiso.jpg'
+import homeimage from '../assets/3d-aesthetics-with-shapes-vaporwave-style.jpg'
 import Projects from './Projects';
 import Experience from './Experience';
+import Education from './Education';
 
 const Home = () => {
     return (
@@ -17,11 +18,16 @@ const Home = () => {
                     <button className="bg-tomato-red text-white p-2 font-body font-bold rounded-md mt-4 hover:bg-yellow-500">Find out more</button>
                 </div>
                 <div className="justify-self-center">
-                    <img src={homeimage} className='h-52 rounded-sm ' />
+                    <img src={homeimage} className='h-72 rounded-sm ' />
+                    {/* Attribution */}
+                    <p className="text-soft-peach text-xs mt-2">
+                        Designed by <a href="https://www.freepik.com" className="underline">Freepik</a>
+                    </p>
                 </div>
             </div>
             <Projects/>
             <Experience/>
+            <Education/>
         </>
         
     );

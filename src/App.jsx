@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Header from './components/Header';
 import Projects from './pages/Projects';
 import Experience from './pages/Experience';
+import Education from './pages/Education';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path='/Projects' element={<Projects/>} />
         <Route path='/Experience' element={<Experience/>}/>
+        <Route path='/Education' element={<Education/>}/>
       </Routes>
     </Router>
   );
