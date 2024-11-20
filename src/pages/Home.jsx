@@ -13,14 +13,14 @@ const Home = () => {
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading">
                         Hi, I'm Sonwabiso!
                     </h1>
-                    <p className="text-lg md:text-xl leading-relaxed">
+                    <p className="text-lg md:text-xl leading-relaxed font-body">
                         A passionate software developer specializing in creating
                         engaging user interfaces and innovative solutions. Welcome to my
                         portfolio!
                     </p>
                     <Link
                         to="/Projects"
-                        className="inline-flex items-center bg-tomato-red text-white px-6 py-3 rounded-full font-bold hover:bg-yellow-500 transition"
+                        className="font-body inline-flex items-center bg-tomato-red text-white px-6 py-3 rounded-full font-bold hover:bg-yellow-500 transition"
                     >
                         View My Work <FaArrowRight className="ml-2" />
                     </Link>

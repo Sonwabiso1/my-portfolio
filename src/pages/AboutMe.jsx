@@ -6,7 +6,7 @@ import { IoLogoFirebase } from "react-icons/io5";
 
 const AboutMe = () => {
     return (
-        <div className="bg-royal-purple min-h-screen flex flex-col items-center p-6 md:p-10 space-y-10">
+        <div className="bg-royal-purple min-h-screen flex flex-col  p-6 md:p-10 space-y-10">
             {/* Heading with Icon on the Right */}
             <h1 className="font-heading text-tomato-red text-4xl md:text-5xl ml-4 md:ml-12 lg:ml-24 mt-0 pt-14 md:pt-28 pb-8 flex items-center">
                 <span>About Me</span>

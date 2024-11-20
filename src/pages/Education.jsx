@@ -17,30 +17,30 @@ const Education = () => {
                 <div className="w-full md:w-1/2 space-y-6">
                     {/* Capaciti Program */}
                     <div className="bg-ocean-blue p-4 md:p-6 rounded-sm shadow-md">
-                        <h2 className="text-white text-xl md:text-2xl font-bold mb-2">
+                        <h2 className="text-white text-xl md:text-2xl font-bold mb-2 font-heading">
                             Capaciti Program
                         </h2>
-                        <p className="text-white">
+                        <p className="text-white font-body">
                             Currently enrolled, specializing in software development and training.
                         </p>
                     </div>
 
                     {/* Codespace Academy */}
                     <div className="bg-emerald-green p-4 md:p-6 rounded-sm shadow-md">
-                        <h2 className="text-white text-xl md:text-2xl font-bold mb-2">
+                        <h2 className="text-white text-xl md:text-2xl font-bold mb-2 font-heading">
                             Codespace Academy
                         </h2>
-                        <p className="text-white">
+                        <p className="text-white font-body">
                             Completed a 6-month course covering HTML, CSS, JavaScript, React, Figma, and Firebase.
                         </p>
                     </div>
 
                     {/* Wits Education */}
                     <div className="bg-coral-pink p-4 md:p-6 rounded-sm shadow-md">
-                        <h2 className="text-white text-xl md:text-2xl font-bold mb-2">
+                        <h2 className="text-white text-xl md:text-2xl font-bold mb-2 font-heading">
                             University of the Witwatersrand
                         </h2>
-                        <p className="text-white">
+                        <p className="text-white font-body">
                             1st and 2nd Year Computer Science (Incomplete)
                         </p>
                     </div>

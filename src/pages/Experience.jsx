@@ -48,14 +48,14 @@ const Experience = () => {
 
                         {/* Timeline Content */}
                         <div className="ml-6">
-                            <h2 className="text-2xl text-soft-peach font-bold">
+                            <h2 className="text-2xl text-soft-peach font-bold font-heading">
                                 {exp.role}
                             </h2>
-                            <h3 className="text-xl text-ocean-blue font-semibold">
+                            <h3 className="text-xl text-ocean-blue font-semibold font-body">
                                 {exp.company}
                             </h3>
-                            <p className="text-white text-sm">{exp.date}</p>
-                            <p className="text-white mt-2">{exp.description}</p>
+                            <p className="text-white text-sm font-body">{exp.date}</p>
+                            <p className="text-white mt-2 font-body">{exp.description}</p>
                         </div>
                     </div>
                 ))}
