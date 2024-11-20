@@ -6,6 +6,8 @@ import Header from './components/Header';
 import Projects from './pages/Projects';
 import Experience from './pages/Experience';
 import Education from './pages/Education';
+import AboutMe from './pages/AboutMe';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path='/Projects' element={<Projects/>} />
         <Route path='/Experience' element={<Experience/>}/>
-        <Route path='/Education' element={<Education/>}/>
+        <Route path='/Education' element={<Education />} />
+        <Route path='/About' element={<AboutMe />} />
+        <Route path='/Footer' element={<Footer/>}/>
       </Routes>
     </Router>
   );

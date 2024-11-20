@@ -4,20 +4,20 @@ import retroComputer from "../assets/retro-computer-desk-arrangement.jpg";
 
 const Education = () => {
     return (
-        <div className="bg-royal-purple h-screen">
+        <div className="bg-royal-purple min-h-screen p-6 md:p-10">
             {/* Page Heading */}
-            <h1 className="font-heading text-tomato-red text-5xl ml-24 mt-0 pt-28 pb-10 flex items-center">
+            <h1 className="font-heading text-tomato-red text-4xl md:text-5xl ml-4 md:ml-12 lg:ml-24 mt-0 pt-14 md:pt-28 pb-10 flex items-center">
                 <span>Education</span>
-                <FaGraduationCap className="ml-4"/>
+                <FaGraduationCap className="ml-4" />
             </h1>
 
             {/* Content Section */}
-            <div className="flex flex-col lg:flex-row items-start space-y-10 lg:space-y-0 lg:space-x-10 pt-10 px-14">
+            <div className="flex flex-col md:flex-row md:space-x-6 lg:space-x-10 items-start space-y-10 md:space-y-0 pt-5 px-4 md:px-10">
                 {/* Left Section - Education Details */}
-                <div className="w-full lg:w-1/2 space-y-6">
+                <div className="w-full md:w-1/2 space-y-6">
                     {/* Capaciti Program */}
-                    <div className="bg-ocean-blue p-6 rounded-sm shadow-md">
-                        <h2 className="text-white text-2xl font-bold mb-2">
+                    <div className="bg-ocean-blue p-4 md:p-6 rounded-sm shadow-md">
+                        <h2 className="text-white text-xl md:text-2xl font-bold mb-2">
                             Capaciti Program
                         </h2>
                         <p className="text-white">
@@ -26,8 +26,8 @@ const Education = () => {
                     </div>
 
                     {/* Codespace Academy */}
-                    <div className="bg-emerald-green p-6 rounded-sm shadow-md">
-                        <h2 className="text-white text-2xl font-bold mb-2">
+                    <div className="bg-emerald-green p-4 md:p-6 rounded-sm shadow-md">
+                        <h2 className="text-white text-xl md:text-2xl font-bold mb-2">
                             Codespace Academy
                         </h2>
                         <p className="text-white">
@@ -36,8 +36,8 @@ const Education = () => {
                     </div>
 
                     {/* Wits Education */}
-                    <div className="bg-coral-pink p-6 rounded-sm shadow-md">
-                        <h2 className="text-white text-2xl font-bold mb-2">
+                    <div className="bg-coral-pink p-4 md:p-6 rounded-sm shadow-md">
+                        <h2 className="text-white text-xl md:text-2xl font-bold mb-2">
                             University of the Witwatersrand
                         </h2>
                         <p className="text-white">
@@ -47,11 +47,11 @@ const Education = () => {
                 </div>
 
                 {/* Right Section - Image */}
-                <div className="w-full lg:w-1/2 flex flex-col items-center">
+                <div className="w-full md:w-1/2 flex flex-col items-center">
                     <img
                         src={retroComputer}
                         alt="Education Illustration"
-                        className="w-2/3 lg:w-3/5 object-cover rounded-sm shadow-lg"
+                        className="w-3/4 md:w-2/3 lg:w-3/5 object-cover rounded-sm shadow-lg"
                     />
                     {/* Attribution */}
                     <p className="text-soft-peach text-xs mt-2">

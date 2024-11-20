@@ -3,6 +3,8 @@ import homeimage from '../assets/3d-aesthetics-with-shapes-vaporwave-style.jpg'
 import Projects from './Projects';
 import Experience from './Experience';
 import Education from './Education';
+import AboutMe from './AboutMe';
+import Footer from '../components/Footer';
 
 const Home = () => {
     return (
@@ -13,7 +15,7 @@ const Home = () => {
                         Hello World, I am Sonwabiso.
                     </h1>
                     <p className="font-body">
-                        I am a Systems Development Intern at CapaCiti.
+                        a Systems Development Intern at CapaCiti.
                     </p>
                     <button className="bg-tomato-red text-white p-2 font-body font-bold rounded-md mt-4 hover:bg-yellow-500">Find out more</button>
                 </div>
@@ -27,7 +29,9 @@ const Home = () => {
             </div>
             <Projects/>
             <Experience/>
-            <Education/>
+            <Education />
+            <AboutMe />
+            <Footer/>
         </>
         
     );
