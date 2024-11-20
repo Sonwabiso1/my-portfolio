@@ -4,18 +4,18 @@ import { FaBriefcase } from "react-icons/fa";
 const Experience = () => {
     const experiences = [
         {
-            date: "2023 - Present",
-            role: "Frontend Developer",
-            company: "Tech Innovators",
+            date: "Aug 2024 - Present",
+            role: "Candidate Software Developer",
+            company: "CapaCiti",
             description:
-                "Developed responsive web interfaces using React and Tailwind CSS, ensuring cross-browser compatibility and improved user experiences.",
+                "Here I also participate in work integrated with learning and have recieved certificates in html, css, javascript, advanced javascript, python, java and fullstack development ",
         },
         {
-            date: "2021 - 2023",
-            role: "Junior Web Developer",
-            company: "Web Solutions Co.",
+            date: "Jan 2024 - June 2024",
+            role: "Student",
+            company: "Codespace Academy",
             description:
-                "Collaborated on building scalable web applications using JavaScript and Firebase, while adhering to best coding practices.",
+                "Here I participated in work integrated learning. I have built several projects and increased my profiency in Javascript, HTML, CSS and React.",
         },
         // {
         //     date: "2020 - 2021",

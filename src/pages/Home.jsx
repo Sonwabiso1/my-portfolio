@@ -1,39 +1,41 @@
-import React from 'react';
-import homeimage from '../assets/3d-aesthetics-with-shapes-vaporwave-style.jpg'
-import Projects from './Projects';
-import Experience from './Experience';
-import Education from './Education';
-import AboutMe from './AboutMe';
-import Footer from '../components/Footer';
+import React from "react";
+import { Link } from "react-router-dom";
+import myImage from "../assets/profile.jpg"; // Replace with your actual image path
+import { FaArrowRight } from "react-icons/fa";
 
 const Home = () => {
     return (
-        <>
-            <div className="grid grid-cols-2 bg-royal-purple text-soft-peach p-4 h-screen items-center">
-                <div  className="ml-20">
-                    <h1 className="text-4xl font-heading font-bold mb-4">
-                        Hello World, I am Sonwabiso.
+        <div className="min-h-screen bg-royal-purple flex flex-col items-center justify-center text-soft-peach px-6 md:px-12">
+            {/* Hero Section */}
+            <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full max-w-6xl space-y-10 md:space-y-0">
+                {/* Left Section - Text */}
+                <div className="text-center md:text-left md:w-1/2 space-y-6">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading">
+                        Hi, I'm Sonwabiso!
                     </h1>
-                    <p className="font-body">
-                        a Systems Development Intern at CapaCiti.
+                    <p className="text-lg md:text-xl leading-relaxed">
+                        A passionate software developer specializing in creating
+                        engaging user interfaces and innovative solutions. Welcome to my
+                        portfolio!
                     </p>
-                    <button className="bg-tomato-red text-white p-2 font-body font-bold rounded-md mt-4 hover:bg-yellow-500">Find out more</button>
+                    <Link
+                        to="/Projects"
+                        className="inline-flex items-center bg-tomato-red text-white px-6 py-3 rounded-full font-bold hover:bg-yellow-500 transition"
+                    >
+                        View My Work <FaArrowRight className="ml-2" />
+                    </Link>
                 </div>
-                <div className="justify-self-center">
-                    <img src={homeimage} className='h-72 rounded-sm ' />
-                    {/* Attribution */}
-                    <p className="text-soft-peach text-xs mt-2">
-                        Designed by <a href="https://www.freepik.com" className="underline">Freepik</a>
-                    </p>
+
+                {/* Right Section - Image */}
+                <div className="md:w-1/2 flex justify-center">
+                    <img
+                        src={myImage}
+                        alt="Sonwabiso"
+                        className="w-2/3 md:w-3/4 lg:w-2/3 object-cover rounded-full shadow-lg"
+                    />
                 </div>
             </div>
-            <Projects/>
-            <Experience/>
-            <Education />
-            <AboutMe />
-            <Footer/>
-        </>
-        
+        </div>
     );
 };
 
