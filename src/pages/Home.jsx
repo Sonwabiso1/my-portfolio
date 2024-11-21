@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import myImage from "../assets/profile.jpg"; // Replace with your actual image path
+import myImage from "../assets/profile.jpg";
 import { FaArrowRight } from "react-icons/fa";
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
             {/* Hero Section */}
             <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full max-w-6xl space-y-10 md:space-y-0">
                 {/* Left Section - Text */}
-                <div className="text-center md:text-left md:w-1/2 space-y-6">
+                <div className="text-center md:text-left md:w-1/2 space-y-6 sm:py-10">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading">
                         Hi, I'm Sonwabiso!
                     </h1>
@@ -31,7 +31,7 @@ const Home = () => {
                     <img
                         src={myImage}
                         alt="Sonwabiso"
-                        className="w-2/3 md:w-3/4 lg:w-2/3 object-cover rounded-full shadow-lg"
+                        className="w-2/3 md:w-3/4 lg:w-2/3 object-cover rounded-full shadow-lg mt-10"
                     />
                 </div>
             </div>

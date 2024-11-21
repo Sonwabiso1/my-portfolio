@@ -1,34 +1,40 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaHome, FaLaptopCode, FaBriefcase, FaGraduationCap, FaUserAlt } from "react-icons/fa";
-import emailjs from "emailjs-com"; // Import EmailJS
+import { FaHome, FaLaptopCode, FaBriefcase, FaGraduationCap, FaUserAlt, FaBars, FaTimes } from "react-icons/fa";
+import emailjs from "emailjs-com";
 
 const Header = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [formData, setFormData] = useState({
         name: "",
         email: "",
         message: "",
     });
 
-    // Function to toggle modal
+    // Toggle Modal
     const toggleModal = () => {
         setIsModalOpen((prev) => !prev);
     };
 
-    // Handle input changes
+    // Toggle Menu
+    const toggleMenu = () => {
+        setIsMenuOpen((prev) => !prev);
+    };
+
+    // Handle Input Changes
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
 
     const emailData = {
-            from_name: formData.name,
-            from_email: formData.email,
-            message: formData.message,
-        };
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+    };
 
-    // Handle form submission
+    // Handle Form Submission
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -55,9 +61,12 @@ const Header = () => {
     return (
         <>
             {/* Header */}
-            <div className="flex items-center justify-between font-heading fixed w-full text-soft-peach p-4 bg-royal-purple">
-                {/* Navigation Links */}
-                <nav className="flex space-x-10 ml-5">
+            <div className="flex items-center justify-between font-heading fixed w-full text-soft-peach p-4 bg-royal-purple z-50">
+                {/* Logo or Brand */}
+                <div className="ml-5 text-3xl font-bold">S. Maloni</div>
+
+                {/* Desktop Navigation */}
+                <nav className="hidden md:flex space-x-8">
                     <Link to="/" className="flex items-center space-x-2">
                         <FaHome size={20} />
                         <span>Home</span>
@@ -82,12 +91,55 @@ const Header = () => {
 
                 {/* Contact Me Button */}
                 <button
-                    className="bg-tomato-red text-white px-6 py-2 rounded-full mr-5 hover:bg-yellow-500 transition"
+                    className="hidden md:block bg-tomato-red text-white px-6 py-2 rounded-full mr-5 hover:bg-yellow-500 transition"
                     onClick={toggleModal}
                 >
                     Contact Me
                 </button>
+
+                {/* Hamburger Menu */}
+                <button
+                    className="md:hidden mr-5 text-soft-peach"
+                    onClick={toggleMenu}
+                >
+                    {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+                </button>
             </div>
+
+            {/* Mobile Navigation */}
+            {isMenuOpen && (
+                <div className="fixed top-0 left-0 w-full h-full bg-royal-purple text-soft-peach flex flex-col items-center justify-center space-y-8 z-40">
+                    <Link to="/" className="flex items-center space-x-2 text-lg" onClick={toggleMenu}>
+                        <FaHome size={20} />
+                        <span>Home</span>
+                    </Link>
+                    <Link to="/Projects" className="flex items-center space-x-2 text-lg" onClick={toggleMenu}>
+                        <FaLaptopCode size={20} />
+                        <span>Projects</span>
+                    </Link>
+                    <Link to="/Experience" className="flex items-center space-x-2 text-lg" onClick={toggleMenu}>
+                        <FaBriefcase size={20} />
+                        <span>Experience</span>
+                    </Link>
+                    <Link to="/Education" className="flex items-center space-x-2 text-lg" onClick={toggleMenu}>
+                        <FaGraduationCap size={20} />
+                        <span>Education</span>
+                    </Link>
+                    <Link to="/About" className="flex items-center space-x-2 text-lg" onClick={toggleMenu}>
+                        <FaUserAlt size={20} />
+                        <span>About Me</span>
+                    </Link>
+                    <button
+                        className="bg-tomato-red text-white px-6 py-2 rounded-full hover:bg-yellow-500 transition"
+                        onClick={() => {
+                            toggleModal();
+                            toggleMenu();
+                        }}
+                    >
+                        Contact Me
+                    </button>
+                </div>
+            )}
 
             {/* Modal */}
             {isModalOpen && (

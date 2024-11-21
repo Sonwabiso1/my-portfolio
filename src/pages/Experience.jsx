@@ -17,13 +17,6 @@ const Experience = () => {
             description:
                 "Here I participated in work integrated learning. I have built several projects and increased my profiency in Javascript, HTML, CSS and React.",
         },
-        // {
-        //     date: "2020 - 2021",
-        //     role: "Intern",
-        //     company: "Startup Hub",
-        //     description:
-        //         "Assisted in designing mockups in Figma and implemented frontend designs using HTML, CSS, and JavaScript.",
-        // },
     ];
 
     return (
