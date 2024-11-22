@@ -32,7 +32,7 @@ const AboutMe = () => {
                         <p>
                             Hi! I'm Sonwabiso, a passionate front-end and software developer based in South Africa. 
                             I love building user-friendly applications and creating innovative solutions. 
-                            When I'm not coding, I enjoy photography, exploring creative projects, and diving into cybersecurity challenges.
+                            When I'm not coding, I enjoy photography, exploring creative projects, playing chess, watching classic movies, and diving into cybersecurity challenges.
                         </p>
                     </div>
 
