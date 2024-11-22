@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="flex justify-center space-x-6">
                 {/* LinkedIn */}
                 <a
-                    href="https://www.linkedin.com/in/your-linkedin-profile"  // Replace with your LinkedIn URL
+                    href="https://www.linkedin.com/in/sonwabiso-maloni-2811ba27b"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-yellow-500 transition"
@@ -17,7 +17,7 @@ const Footer = () => {
 
                 {/* GitHub */}
                 <a
-                    href="https://github.com/your-github-profile"  // Replace with your GitHub URL
+                    href="https://https://github.com/Sonwabiso1" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-yellow-500 transition"

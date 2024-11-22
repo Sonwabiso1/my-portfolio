@@ -6,7 +6,7 @@ const Education = () => {
     return (
         <div className="bg-royal-purple min-h-screen p-6 md:p-10">
             {/* Page Heading */}
-            <h1 className="font-heading text-tomato-red text-4xl md:text-5xl ml-4 md:ml-12 lg:ml-24 mt-0 pt-14 md:pt-28 pb-10 flex items-center">
+            <h1 className="font-heading text-tomato-red text-3xl sm:text-4xl lg:text-5xl flex items-center justify-center pt-14">
                 <span>Education</span>
                 <FaGraduationCap className="ml-4" />
             </h1>

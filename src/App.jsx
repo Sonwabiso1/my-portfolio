@@ -21,6 +21,7 @@ function App() {
         <Route path='/About' element={<AboutMe />} />
         <Route path='/Footer' element={<Footer/>}/>
       </Routes>
+      <Footer/>
     </Router>
   );
 }
