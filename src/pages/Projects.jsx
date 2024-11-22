@@ -44,7 +44,7 @@ const Projects = () => {
                     title="Podpeek"
                     description="A React-based app offering a variety of podcasts from different genres. Users can browse, add favorites, and get detailed information."
                     imgSrc={podcast}
-                    bgColor="bg-tomato-red"
+                    bgColor="bg-ocean-blue"
                     link="https://github.com/Sonwabiso1/podpeek-podcast-app.git"
                 />
                 <ProjectCard
