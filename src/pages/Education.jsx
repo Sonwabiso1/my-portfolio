@@ -38,7 +38,7 @@ const Education = () => {
                     {/* Wits Education */}
                     <div className="bg-coral-pink p-4 md:p-6 rounded-sm shadow-md">
                         <h2 className="text-white text-xl md:text-2xl font-bold mb-2 font-heading">
-                            University of the Witwatersrand
+                            University of Witwatersrand
                         </h2>
                         <p className="text-white font-body">
                             1st and 2nd Year Computer Science (Incomplete)
