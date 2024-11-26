@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import myImage from "../assets/profile.jpg";
+import myImage from "../assets/Sonwabiso Headshot.jpg";
 import { FaArrowRight } from "react-icons/fa";
 
 const Home = () => {
