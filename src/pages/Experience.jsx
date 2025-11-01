@@ -4,6 +4,13 @@ import { FaBriefcase } from "react-icons/fa";
 const Experience = () => {
     const experiences = [
         {
+            date: "April 2025 - Present",
+            role: "Product Engineer Intern",
+            company: "Absa",
+            description:
+                "Working within the Orchestration Servies team to support the development, enhancement, and integration of core banking systems. Engaged in hands-on software development, cloud-native tooling, and collaborative problem solving as part of the UVU Africa (CapaCiti) learnership.",
+        },
+        {
             date: "Aug 2024 - Present",
             role: "Candidate Software Developer",
             company: "CapaCiti",
