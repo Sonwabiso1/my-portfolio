@@ -30,9 +30,9 @@ const AboutMe = () => {
                     <div>
                         <h2 className="text-2xl font-bold mb-2">Who I Am</h2>
                         <p>
-                            Hi! I'm Sonwabiso, a passionate front-end and software developer based in South Africa. 
-                            I love building user-friendly applications and creating innovative solutions. 
-                            When I'm not coding, I enjoy photography, exploring creative projects, playing chess, watching classic movies, and diving into cybersecurity challenges.
+                            Hi, I'm Sonwabiso — currently working as a Product Engineer Intern, contributing to the development and enhancement of enterprise software solutions in the banking sector. 
+                            I'm focused on building scalable systems, improving integration workflows, and sharpening my full-stack development skills through real-world projects and work-integrated learning. 
+                            I’m driven by creating useful software, growing through collaboration, and continuously pushing myself as a developer.
                         </p>
                     </div>
 

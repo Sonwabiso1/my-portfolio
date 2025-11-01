@@ -14,9 +14,9 @@ const Home = () => {
                         Hi, I'm Sonwabiso!
                     </h1>
                     <p className="text-lg md:text-xl leading-relaxed font-body">
-                        A passionate software developer specializing in creating
-                        engaging user interfaces and innovative solutions. Welcome to my
-                        portfolio!
+                        A software developer focused on building reliable, user-centered applications.
+                        I work on modernizing enterprise systems while continuously growing
+                        my full-stack development skills. Welcome to my portfolio.
                     </p>
                     <Link
                         to="/Projects"
