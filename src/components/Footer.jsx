@@ -26,7 +26,7 @@ const Footer = () => {
                 </a>
             </div>
             <div className="text-center mt-4 text-sm">
-                <p>&copy; 2024 Sonwabiso. All Rights Reserved.</p>
+                <p>&copy; 2026 Sonwabiso. All Rights Reserved.</p>
             </div>
         </footer>
     );
